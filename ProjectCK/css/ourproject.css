@@ -1,0 +1,212 @@
+.imgProject>div img{
+  max-width: 100%;
+}
+.project{
+	background-image: url("../img/4.png");
+	background-size: 100% 100%;
+}
+.contactUs{
+	text-align: center;
+	padding: 55px 0px 55px 0px !important;
+	background: #306c0699;
+	background-size: 100% 100%;
+}
+.mainContactUs{
+	background-image: url("../img/6.png");
+	background-size: 100% 100%;
+}
+.contactUs div{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 5%;
+	font-family: arial;
+}
+.textImgProject img{
+	max-width: 100%;
+}
+.textImgProject div{
+	text-align: center;
+	color: gray;
+	font-family: arial;
+}
+.textImgProject p{
+	text-align: center;
+	color: gray;
+	font-size: 12px;
+}
+
+.mainAnimate>a>img:hover{
+	box-shadow: 1px 1px black,
+                2px 2px black,
+                3px 3px black;
+	transform: translateX(-5px);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+	animation-duration: 5s;
+}
+
+/* .mainAnimate{
+  position: relative;
+}
+.animateProject{
+  position: absolute;
+  bottom: 5px;
+  width: 90%;
+  height: 30%;
+  background: green;
+  display: none;
+} */
+.animateProjectCenter{
+  position: absolute;
+  bottom: 5px;
+  width: 94.9%;
+  height: 30%;
+  background: green;
+	display: none;
+}
+/* .mainAnimate:hover .animateProject{
+  display: block;
+	 animation-name: fadeInUp;
+	animation-duration: 1s;
+} */
+
+.animateProject i{
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	margin-left: 44%;
+	position: absolute;
+	top: -20%;
+}
+.animateProjectCenter i{
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	margin-left: 44%;
+	position: absolute;
+	top: -20%;
+	
+}
+/* .mainAnimate:hover .animateProjectCenter{
+  display: block;
+	 animation-name: fadeInUp;
+	animation-duration: 1s;
+} */
+.textImgProject{
+  position: relative;
+}
+.textImgProjectChild{
+  position: absolute;
+  width: 90%;
+  height: 76%;
+  bottom: 70px;
+  background: white;
+	display: none;
+	opacity: 0.5;
+}
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.textImgProject:hover .textImgProjectChild{
+	display: block;
+	overflow: hidden;
+	animation-name: slideInLeft;
+	animation-duration: 1s;
+}
+.mangxahoi i{
+	margin-top: 50%;
+	padding: 15px;
+	border: 1px solid;
+	margin-right: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.mangxahoi i:hover{
+	background: green;
+	color: white;
+}
+@media screen and (min-width: 601px) and (max-width:991px){
+	.textImgProjectChild{
+  position: absolute;
+  width: 73%;
+  height: 82%;
+  bottom: 68px;
+  background: white;
+	display: none;
+	opacity: 0.5;
+}
+	.imgMeet{
+		margin-left: -11% !important;
+	}
+	.textImgProject div{
+		margin-right: 25%;
+	}
+	.textImgProject p{
+		margin-right: 25%;
+	}
+	.imgProject{
+		margin-left: -16% !important;
+	}
+  .animateProject{
+  width: 88.6%;
+  height: 30%;
+}
+.animateProjectCenter{
+ 
+  width: 94.5%;
+}
+
+}
+@media screen and (max-width: 480px){
+	.textImgProjectChild{
+  position: absolute;
+  width: 70.5%;
+  height: 81%;
+  bottom: 70px;
+  background: white;
+	display: none;
+	opacity: 0.5;
+}
+   .animateProject{
+  width: 70.6%;
+  height: 25%;
+}
+.animateProjectCenter{
+ 
+  width: 88.5%;
+}
+	.heaserMeetTheTeam h3{
+		font-size: 23px;
+	}
+	.textImgProject div{
+		margin-right: 25%;
+	}
+	.textImgProject p{
+		margin-right: 25%;
+	}
+}

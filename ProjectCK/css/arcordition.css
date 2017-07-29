@@ -1,0 +1,59 @@
+.accordionText p{
+ display: none;
+ color: gray;
+}
+.accordionText h6{
+  font-weight: bold;
+ color: gray;
+}
+.accordionText h6:before{
+  content: '\02795';
+  margin-right: 10px;
+}
+.bgAccordion{
+	background-image: url("../img/7.png");
+	background-size: 100% 100%;
+	position: relative;
+	height: 576px;
+}
+.accordionMain{
+	
+}
+.accordionText{
+  width: 60%;
+  border: 1px solid gray;
+  margin-bottom:10px;
+  margin-left: 20%;
+  background: white;
+  box-shadow: 3px 1px 1px gray;
+  padding: 10px;
+}
+
+.headerFre{
+  color: white;
+  font-size: 30px;
+  margin-left: 20%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.headerSec{
+  font-size: 30px;
+  margin-left: 20%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.formInfo{
+  width: 60% !important;
+  margin-left: 20% !important;
+}
+.bgSec{
+	background-image: url("../img/2 (1).png");
+	background-size: 100% 100%;
+}
+.logoMain{
+/*   margin-right: 3%; */
+}
+.logoItem{
+  max-width: 50%;
+  margin-left: 30%;
+}

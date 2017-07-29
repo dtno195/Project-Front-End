@@ -1,0 +1,86 @@
+.imgBlog>div img{
+  max-width: 100%;
+}
+.imgBlog div{
+  margin-right: 25px;
+}
+.imgBlog>div>span{
+  font-weight: bold;
+  color: black;
+  font-size:16px;
+}
+.imgBlog>div>p{
+  font-size: 12px;
+  color: gray;
+}
+.imgBlog>div>a{
+  color: gray;
+  font-size: 13px;
+}
+.frameNumber{
+  text-align: center;
+}
+.frameNumber1{
+  background: #65a517;
+  padding: 50px 0 20px 0 !important;
+}
+.frameNumber2{
+  background: #5e9209;
+  padding: 50px 0 20px 0 !important;
+}
+.frameNumber3{
+  background: #436905;
+  padding: 50px 0 20px 0 !important;
+}
+.frameNumber4{
+  background: #324806;
+  padding: 50px 0 20px 0 !important;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+.imgBlog>div img:hover{
+ 
+}
+@media screen and (min-width: 992px){
+  .imgBlog{
+    margin-left: 5% !important;
+  }
+}
+@media screen and (min-width: 601px) and (max-width:991px){
+  .imgBlog div{
+    margin-right: 0px;
+  }
+  .imgBlog>div>span{
+    font-size: 15px;
+  }
+  .imgBlog>div>p{
+    font-size: 10px;
+  }
+  .imgBlog>div>a{
+    font-size: 10px;
+  }
+  .imgBlog{
+    margin-left: -8% !important;
+  }
+}
+.imgBlog>div span{
+  cursor: pointer;
+}
+.imgBlog>div span:hover{
+  color: green;
+}

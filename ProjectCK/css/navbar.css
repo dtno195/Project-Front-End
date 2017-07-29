@@ -1,0 +1,73 @@
+.stick{
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.centerMenu{
+  position: relative;
+}
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+.lv2{
+  position: absolute;
+  background: white;
+  z-index: 1000 !important;
+}
+.lv2 li{
+  float: none !important;
+  color: black;
+  display: none;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0% !important;
+}
+.lv2 li a{
+  color: black;
+}
+
+.centerMenu>li:hover .lv2>li{
+  display: block;
+}
+.lv2>li a:hover{
+   animation-name: shake;
+   animation: 1s;
+}
+@media only screen and (min-width:601px) and (max-width:991px){
+  .nav-wrapper>a{
+    display: none;
+  }
+  .hide-on-med-and-down{
+    display: block !important;
+  }
+  .centerMenu{
+  margin-left: 10% !important;
+}
+}
+@media only screen and (max-width:480px){
+  
+}
+.mainmenu{
+  background: green !important;
+}
+.centerMenu{
+  margin-left: 24%;
+}

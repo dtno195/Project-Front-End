@@ -1,0 +1,363 @@
+.bgImg{
+  background-image: url("../img/bg.jpg");
+  background-size: 100% 400px; 
+  position: relative;
+  cursor: pointer;
+}
+.text{
+  position: absolute;
+  top:101px;
+  left:270px;
+}
+.woman{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+}
+.woman img{
+  width: 100%;
+  height: 320px;
+}
+.man{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.man img{
+  width: 196px;
+  height: 320px;
+}
+.flower{
+  position: absolute;
+  top: 20px;
+  left: 110px;
+}
+.flower img{
+  width: 117px;
+  height: 120px;
+}
+.bacha{
+  position: absolute;
+  top: 20px;
+  left: 110px;
+  display: none;
+}
+.bacha img{
+  width: 117px;
+  height: 120px;
+}
+.xeng{
+  position: absolute;
+  bottom: 0px;
+}
+.xeng img{
+  width: 117px;
+  height: 120px;
+}
+.rau{
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.rau img{
+  width: 117px;
+  height: 120px;
+}
+.vegertable{
+  position: absolute;
+  top: 0px;
+  right: 220px;
+}
+.vegertable img{
+  width: 117px;
+  height: 120px;
+}
+.hoasen{
+  position: absolute;
+  top: 0px;
+  right: 220px;
+  display: none;
+}
+.hoasen img{
+  width: 117px;
+  height: 120px;
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+ .bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  animation-duration: 5s;
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  animation-duration: 5s;
+} 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+ .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+ .fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-duration: 5s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 5s;
+}
+.gardenText{
+  color: #0009;
+  font-family: fontCuaAnh;
+}
+.textAside{
+  color: gray;
+  font-family: arial;
+}
+.radiusBtn{
+  border-radius: 22px !important; 
+}
+
+@media screen and (min-width: 601px) and (max-width:991px){
+  .woman img{
+    width: 100%;
+    height: 200px;
+ }
+  .man img{
+    width: 100%;
+    height: 200px;
+ }
+  .flower img{
+  width: 100%;
+  height: 80px;
+}
+  .flower{
+    left: 10%;
+  }
+  .vegertable img{
+    width: 100%;
+    height: 80px;
+  }
+  .vegertable{
+    right: 10%;
+  }
+  .xeng img{
+    width: 100%;
+    height: 80px;
+  }
+  .rau img{
+    width: 100%;
+    height: 80px;
+  }
+  .hoasen img{
+    width: 100%;
+    height: 80px;
+  }
+  .hoasen{
+    right: 10%;
+    top: 0;
+  }
+  .bacha img{
+    width: 100%;
+    height: 80px;
+  }
+  .bacha{
+    left: 10%;
+    top: 0;
+  }
+  .text{
+    left: 12%
+  }
+  .text h1{
+    font-size: 25px;
+  }
+  .text p{
+    font-size: 10px !important;
+  }
+  .radiusBtn{
+    font-size: 8px;
+    padding: 0px 12px !important;
+  }
+}
+.slideTop{
+  margin-top: 94px;
+}
+@media screen and (max-width: 480px) {
+  .slideTopPhone{
+    margin-top: 127px;
+  }
+  .woman img{
+    width: 100%;
+    height: 150px;
+ }
+  .man img{
+    width: 100%;
+    height: 150px;
+ }
+  .flower img{
+  width: 100%;
+  height: 70px;
+}
+  .flower{
+    left: 10%;
+  }
+  .vegertable img{
+    width: 100%;
+    height: 70px;
+  }
+  .vegertable{
+    right: 10%;
+  }
+  .xeng img{
+    width: 100%;
+    height: 70px;
+  }
+  .rau img{
+    width: 100%;
+    height: 70px;
+  }
+  .hoasen img{
+    width: 100%;
+    height: 70px;
+  }
+  .hoasen{
+    right: 10%;
+    top: 0;
+  }
+  .bacha img{
+    width: 100%;
+    height: 70px;
+  }
+  .bacha{
+    left: 10%;
+    top: 0;
+  }
+  .text{
+    left: 12%
+  }
+  .text h1{
+    font-size: 20px;
+  }
+  .text p{
+    font-size: 8px !important;
+  }
+  .radiusBtn{
+    font-size: 6px;
+    padding: 0px 12px !important;
+  }
+}

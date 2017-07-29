@@ -1,0 +1,108 @@
+.frameText{
+  border: 1px solid #8080801a;
+  height: 150px;
+  margin-right:20px;
+  margin-top: 10px;
+}
+.textContent{
+  text-align: center;
+  position: relative;
+}
+.frameText1{
+  position: relative;
+}
+
+
+.content2{
+  position: relative !important;
+}
+.content3{
+  position: absolute !important;
+  display: none;
+}
+.textParent i{
+  font-size: 30px;
+  margin-top: 20%;
+  color:green;
+}
+.textParent p{
+  font-family: arial;
+}
+.textChild{
+  position: absolute;
+  border:1px solid gray;
+  text-align: center;
+  bottom: 0px;
+  display: none;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0px;
+  background: green;
+  transition: all 1s ease-in;
+}
+.textChild h6{
+  color: white;
+  font-size: 20px;
+}
+.textChild p{
+  font-size: 13px;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, 1.2, 1.2);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.textContent:hover .textChild{
+  display: block;
+  cursor: pointer;
+ animation-name: zoomIn;
+  animation-duration: .2s;
+/*   transform:scale(1.1);
+  transition: all 1s ease-in;
+  filter:brightness(.5); */
+}
+@media screen and (min-width: 601px) and (max-width:991px){
+  .textChild h6{
+    font-size: 15px;
+  }
+  .textChild p{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .textParent i{
+  font-size: 20px;
+  margin-top: 10%;
+  color:green;
+}
+.textParent p{
+  font-family: arial;
+  font-size: 12px;
+}
+  .textChild h6{
+  color: white;
+  font-size: 18px;
+}
+.textChild p{
+  font-size: 14px;
+}
+  .content2{
+    margin-left: 6% !important;
+  }
+}
+
+
+
+
+

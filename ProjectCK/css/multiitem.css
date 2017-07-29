@@ -1,0 +1,14 @@
+.item{
+	text-align: center;
+}
+.item img{
+	width: 18% !important;
+	margin-left: 40%;
+}
+.item h4{
+	font-size: 20px;
+	font-family: arial;
+}
+.item p{
+	font-size: 12px;
+}

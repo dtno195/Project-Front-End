@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  font-family: "Unica One";
+  font-size: 4rem;
+  color: #16a085;
+  background: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  position: relative;
+}
+body .name:before {
+  content: '';
+  width: 100%;
+  background: #16a085;
+  opacity: 0.3;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  position: absolute;
+}
+body .name .letter {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
